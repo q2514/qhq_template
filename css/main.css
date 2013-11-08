@@ -79,6 +79,27 @@ body {
  font-family: Arial;
 }
 /* ==========================================================================
+   polyfills兼容修复相关样式
+   ========================================================================== */
+.fix_ie_css3{
+/*例子：背景如不需要图片，可直接将url(bg-image.png) no-repeat,这部分去掉*/
+/* border: 1px solid #ccc;
+ -webkit-border-radius: 8px;
+ -moz-border-radius: 8px;
+ border-radius: 8px;
+ -webkit-box-shadow: #666 0px 2px 3px;
+ -moz-box-shadow: #666 0px 2px 3px;
+ box-shadow: #666 0px 2px 3px;
+ background: url(bg-image.png) no-repeat #CCC; 
+ background: url(bg-image.png) no-repeat, -webkit-gradient(linear, 0 0, 0 100%, from(#CCC) to(#EEE));
+ background: url(bg-image.png) no-repeat, -webkit-linear-gradient(#CCC, #EEE); 
+ background: url(bg-image.png) no-repeat, -moz-linear-gradient(#CCC, #EEE); 
+ background: url(bg-image.png) no-repeat, -ms-linear-gradient(#CCC, #EEE);
+ background: url(bg-image.png) no-repeat, -o-linear-gradient(#CCC, #EEE);
+ background: url(bg-image.png) no-repeat, linear-gradient(#CCC, #EEE);
+ -pie-background: url(bg-image.png) no-repeat, linear-gradient(#CCC, #EEE); 
+}
+/* ==========================================================================
    Helper classes
    ========================================================================== */
 
@@ -161,7 +182,7 @@ body {
  * Include this rule to trigger hasLayout and contain floats.
  */
 
-.clearfix {  *zoom: 1;
+.clearfix { *zoom: 1;
 }
 
 /* ==========================================================================
@@ -170,10 +191,10 @@ body {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width:760px) {
 /* Style adjustments for viewports that meet the condition */
 }
- @media print,  (-o-min-device-pixel-ratio: 5/4),  (-webkit-min-device-pixel-ratio: 1.25),  (min-resolution: 120dpi) {
+ @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
 /* Style adjustments for high resolution devices */
 }
 
@@ -189,27 +210,27 @@ body {
  box-shadow: none !important;
  text-shadow: none !important;
 }
-a,  a:visited { text-decoration: underline; }
+a, a:visited { text-decoration: underline; }
 a[href]:after { content: " (" attr(href) ")"; }
 abbr[title]:after { content: " (" attr(title) ")"; }
 /*
      * Don't show links for images, or javascript/internal links
      */
 
-.ir a:after,  a[href^="javascript:"]:after,  a[href^="#"]:after { content: ""; }
-pre,  blockquote {
+.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+pre, blockquote {
  border: 1px solid #999;
  page-break-inside: avoid;
 }
 thead { display: table-header-group; /* h5bp.com/t */ }
-tr,  img { page-break-inside: avoid; }
+tr, img { page-break-inside: avoid; }
 img { max-width: 100% !important; }
  @page {
  margin: 0.5cm;
 }
-p,  h2,  h3 {
+p, h2, h3 {
  orphans: 3;
  widows: 3;
 }
-h2,  h3 { page-break-after: avoid; }
+h2, h3 { page-break-after: avoid; }
 }

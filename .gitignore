@@ -2,3 +2,7 @@
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 /bak
 /test.html
+/assets/polyfills/pie/demos
+/assets/polyfills/pie/documentation
+/assets/polyfills/pie/tests
+/assets/polyfills/DD_belatedPNG/DD_belatedPNG_0.0.8a.js

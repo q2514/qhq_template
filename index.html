@@ -31,7 +31,7 @@
 <header >
 <h1>ie6+全兼容模版 qhq_template</h1>
 </header>
-<p>测试的内容<img src="assets/polyfills/pie/tests/icon-ie.png" width="32" height="32"  ></p>
+<p>测试的内容</p>
 <p >Hello world! This is qhq template.</p>
 
 <footer >
@@ -50,22 +50,10 @@
 <!--<script src="assets/jquery/jquery-ui/jquery-ui-1.9.2.custom.min.js"></script> --> 
 <script src="assets/plugins/plugins.js"></script> 
 
-<!--------------浏览器兼容处理JS--> 
-<script src="assets/polyfills/pie/pie.1.0.js"></script>
-<!--修复IE6~9对CSS3圆角、阴影、渐变背景样式的支持--> 
-<!--[if lt IE 10]>
-<script>
-        $('.fix_ie_css3').each(function(){PIE.attach(this);});
-</script>
-<![endif]--> 
+<!--------------浏览器兼容修复处理polyfills--> 
+<script src="assets/polyfills/yepnope/yepnope.ie-prefix.js"></script>
+<script src="assets/polyfills/polyfills.js"></script>
 
-<!--修复IE6png图片透明--> 
-<!--[if IE 6]>
-<script src="assets/polyfills/DD_belatedPNG/DD_belatedPNG_0.0.8a-min.js"></script>
-<script>
-		DD_belatedPNG.fix('*,img,background');
-</script>
-<![endif]--> 
 <!--------------自定义JS--> 
 <script src="js/main.js"></script> 
 <!--------------其它JS--> 

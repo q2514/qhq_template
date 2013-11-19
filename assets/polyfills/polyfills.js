@@ -16,7 +16,7 @@ yepnope({
 
 //修复IE6 PNG24 img背景透明问题。
 yepnope({
-  load: 'ie6!assets/polyfills/DD_belatedPNG/DD_belatedPNG_0.0.8a.js',
+  load: 'ie6!assets/polyfills/DD_belatedPNG/DD_belatedPNG_0.0.8a-min.js',
   complete: function() {
     DD_belatedPNG.fix('*,img,background');
   }

@@ -99,7 +99,8 @@ header>h1>b{ color:#F00;}
  background: url(bg-image.png) no-repeat, -o-linear-gradient(#CCC, #EEE);
  background: url(bg-image.png) no-repeat, linear-gradient(#CCC, #EEE);
  -pie-background: url(bg-image.png) no-repeat, linear-gradient(#CCC, #EEE); 
-}
+ */
+ }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

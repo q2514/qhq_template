@@ -18,7 +18,7 @@ yepnope({
 yepnope({
   load: 'ie6!assets/polyfills/DD_belatedPNG/DD_belatedPNG_0.0.8a-min.js',
   complete: function() {
-    DD_belatedPNG.fix('*,img,background');
+    DD_belatedPNG.fix('a,a:hover,img,background,.fix_png,.fix_png:hover');
   }
 
 });

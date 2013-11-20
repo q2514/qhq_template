@@ -122,6 +122,14 @@ header>h1>b{ color:#F00;}
  width: 0;
  height: 150%;
 }
+/*常规隐藏显示*/
+.none {
+ display:none;
+}
+.block {
+ display:block;
+}
+
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */

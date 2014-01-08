@@ -3,7 +3,7 @@
 //CSS3 pie 可以让IE 6 7 8 9支持部分圆角，阴影，渐变背景功能,修复IE6 PNG24背景透明度。
 yepnope({
   test: Modernizr.borderradius && Modernizr.boxshadow && Modernizr.cssgradients,
-  nope: 'ielt10!assets/polyfills/pie/pie.1.0.js',
+  nope: 'ielt10!/assets/polyfills/pie/pie.1.0.js',
   complete: function() {
     console.log("PIE loaded!");
     if (window.PIE) {
@@ -16,7 +16,7 @@ yepnope({
 
 //修复IE6 PNG24 img背景透明问题。
 yepnope({
-  load: 'ie6!assets/polyfills/DD_belatedPNG/DD_belatedPNG_0.0.8a-min.js',
+  load: 'ie6!/assets/polyfills/DD_belatedPNG/DD_belatedPNG_0.0.8a-min.js',
   complete: function() {
     DD_belatedPNG.fix('a,a:hover,img,background,.fix_png,.fix_png:hover');
   }
@@ -25,13 +25,13 @@ yepnope({
 
 //修复IE9以下placeholders问题。
 yepnope({
-  load: 'ielt9!assets/polyfills/placeholders/placeholders.jquery.min.js'
+  load: 'ielt9!/assets/polyfills/placeholders/placeholders.jquery.min.js'
 });
 
 
 //修复IE9以下版本不支持Canvas 的问题。
 /*yepnope({
 	test: Modernizr.canvas,
-	nope: 'ielt10!assets/polyfills/explorerCanvas/excanvas.compiled.js',
+	nope: 'ielt10!/assets/polyfills/explorerCanvas/excanvas.compiled.js',
 	}); 
 */
